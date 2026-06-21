@@ -1,0 +1,563 @@
+/* Effra font from Adobe Fonts */
+/* You will need to replace this with your own font hosting solution */
+@import url("https://use.typekit.net/xve0xlg.css");
+
+body {
+    font-family: 'effra', sans-serif;
+    font-weight: 400; /* Effra Regular */
+    background-color: #F2F2F2; /* Gray 100 */
+    color: #292929;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'effra', sans-serif;
+    font-weight: 700; /* Effra Bold */
+}
+
+.lucide {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+}
+
+.chat-container {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EFEFF6; /* Brand Light */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #707679; /* Gray 500 */
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4C5458; /* Gray Medium */
+}
+
+.tab.active {
+    border-bottom-color: #8D3B90; /* Primary: Purple Bright */
+    background-color: #EFEFF6; /* Brand Light */
+    color: #632965; /* Secondary: Purple Dark */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'effra', sans-serif;
+    font-weight: 700; /* Effra Bold */
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 48px;
+    padding: 0 24px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #B47FB6; /* Per style guide */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #8D3B90;
+}
+
+.btn-primary:focus {
+    outline: 2px solid #00B8D8;
+    outline-offset: 2px;
+}
+
+.btn-primary:disabled {
+    background-color: #707679;
+    cursor: not-allowed;
+}
+
+/* Form Field Styles */
+.form-label {
+    font-family: 'effra', sans-serif;
+    font-weight: 400; /* Effra Regular */
+    font-size: 16px;
+    color: #4C5458; /* Gray Medium */
+}
+
+.form-input {
+    font-family: 'effra', sans-serif;
+    font-weight: 400; /* Effra Regular */
+    font-size: 18px;
+    color: #292929;
+    border: 1px solid #707679; /* Gray 500 */
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.form-input::placeholder {
+    color: #707679; /* Gray 500 */
+    font-size: 18px;
+}
+
+.form-input:focus {
+    border-color: #0060AE; /* Blue */
+    box-shadow: 0 0 0 2px rgba(0, 96, 174, 0.2);
+    outline: none;
+}
+
+/* Component: Card */
+.card {
+    background-color: white;
+    border: 1px solid #EFEFF6; /* Brand Light */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-title {
+    font-family: 'effra', sans-serif;
+    font-weight: 700; /* Effra Bold */
+    font-size: 20px;
+    color: #292929;
+}
+
+.card-content {
+    font-family: 'effra', sans-serif;
+    font-weight: 400; /* Effra Regular */
+    font-size: 16px;
+    color: #292929;
+}
+.tool-btn {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
+  }
+
+  /* When selected */
+.tool-btn.active {
+    background-color: #F5EDF5;  /* your color */
+    border-color: #8D3B90;      /* optional highlight */
+    color: #8D3B90;             /* text highlight */
+    font-weight: 600;
+  }
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.typing-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #6b21a8; /* purple tone */
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.typing-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+.feedback-icons svg {
+  cursor: pointer;
+  transition: transform 0.2s ease, fill 0.2s ease;
+  fill: #707679; /* set default color */
+}
+
+.feedback-icons svg:hover {
+  transform: scale(1.2);  /* optional hover effect */
+  fill: plum;           /* slightly darker on hover */
+}
+
+.copy-btn {
+  font-size: 1rem;
+  color: #707679;
+}
+
+.copy-btn:hover {
+  color: #8e44ad; /* purple hover for copy icon */
+}
+
+.markdown-body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.markdown-body h2, .markdown-body h3 {
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.markdown-body a:hover {
+  color: #1d4ed8;
+}
+.markdown-body strong {
+  font-weight: 600;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top bar container */
+.top-bar {
+    position: fixed;       /* fixed at top */
+    top: 0;
+    right: 0;              /* top-right corner */
+    padding: 5px 10px;     /* smaller padding */
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-bottom-left-radius: 6px; 
+    font-size: 12px; /* smaller text */
+}
+
+.top-bar span {
+    color: #6a0dad;  /* purple letters */
+    margin-right: 8px;
+    font-weight: normal;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #6a0dad; 
+    font-weight: bold;
+    padding: 3px 6px;
+    font-size: 12px;
+    border: 1px solid #6a0dad;
+    border-radius: 3px;
+}
+
+.top-bar a:hover {
+    background-color: #6a0dad;
+    color: white;
+}
+/* Page content */
+.content {
+    margin-top: 40px; /* space for fixed top bar */
+    padding: 20px;
+}
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;   /* push image to the right */
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;          /* optional spacing */
+}
+.bannar {
+  width: 80px;                 /* try 80, 60, 40 etc. */
+  height: auto;                /* keep aspect ratio */
+}
+
+.tool-results {
+  background: #F5EDF5;   /* soft whitish purple */
+  color: #1f2937;        /* dark readable text */
+  border: 1px solid #E5D4E6;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Ensure ALL inner text is dark */
+.tool-results * {
+  color: #1f2937 !important;
+}
+
+.tool-results {
+  line-height: 1.2 !important;
+}
+
+
+@keyframes blinkDots {
+  0%, 20% { content: ""; }
+  40% { content: "."; }
+  60% { content: ".."; }
+  80%, 100% { content: "..."; }
+}
+
+.typing-dots::after {
+  content: "";
+  animation: blinkDots 1s infinite steps(1, end);
+}
+/* ===================== */
+/* STANDARD COMPACT TABLE */
+/* ===================== */
+
+.tool-card-main {
+  background: #F5EDF5;
+  border: 1px solid #E5D4E6;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.tool-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.tool-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.tool-account {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ===== SECTION CARD ===== */
+.tool-section {
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8D3B90;
+  margin-bottom: 8px;
+}
+
+/* Rows */
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+}
+
+.section-row:last-child {
+  border-bottom: none;
+}
+
+.section-row span:first-child {
+  font-weight: 600;
+  color: #374151;
+  min-width: 160px;
+}
+
+/* ===== TABLE (for complex data) ===== */
+.compact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: white;
+  color: #1f2937;
+}
+
+.compact-table th {
+  background: #EFEFF6;
+  color: #4C5458;
+  font-weight: 600;
+}
+
+.compact-table th,
+.compact-table td {
+  border: 1px solid #E5E7EB;
+  padding: 6px 8px;
+}
+
+.tool-card {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tool-card:last-child {
+  border-bottom: none;
+}
+
+.tool-card-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  row-gap: 6px;
+  column-gap: 10px;
+  font-size: 13px;
+}
+
+.tool-results > div {
+  margin-bottom: 0;
+}
+
+.tool-results > div:last-child {
+  margin-bottom: 0;
+}
+
+.tool-results div {
+  margin: 0 !important;
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+.sn-card {
+  background: #F5EDF5; /* whitish purple */
+  border: 1px solid #E5D4E6;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 8px;
+}
+
+/* Header */
+.sn-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.sn-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* Status Badge */
+.sn-badge {
+  background: #22c55e;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Subheader */
+.sn-subheader {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+/* Rows */
+.sn-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.sn-row span:first-child {
+  font-weight: 600;
+  color: #374151;
+  min-width: 160px;
+}
+
+.sn-row span:last-child {
+  text-align: left;
+  flex: 1;
+}
+
+/* Comments (multi-line) */
+.sn-comments span:last-child {
+  white-space: pre-wrap;
+}
+
+/* Links */
+.sn-row a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sn-row a:hover {
+  text-decoration: underline;
+}
+
+.sn-badge.green { background: #22c55e; }
+.sn-badge.yellow { background: #f59e0b; }
+.sn-badge.red { background: #ef4444; }
+
+.tool-section {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 13px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #374151;
+  min-width: 140px;
+}
+
+.value {
+  flex: 1;
+  text-align: left;
+  color: #111827;
+  word-break: break-word;
+}
+

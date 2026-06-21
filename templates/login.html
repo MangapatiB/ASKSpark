@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ASK Spark | Sparklight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      width: 360px;
+      background: #fff;
+      padding: 32px;
+      border-radius: 10px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    h1 {
+      color: #8D3B90;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #707679;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #8D3B90;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h1>ASK Spark</h1>
+  <p>Sign in with your work account</p>
+
+  <form action="/azure-login" method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <button type="submit">Sign In</button>
+  </form>
+</div>
+
+</body>
+</html>
+
